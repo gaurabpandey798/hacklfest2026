@@ -1,26 +1,25 @@
+import Navbar from "@/components/sections/Navbar";
+import Hero from "@/components/sections/Hero";
+import Countdown from "@/components/sections/Countdown";
+import Statistics from "@/components/sections/Statistics";
+import About from "@/components/sections/About";
+import Vision from "@/components/sections/Vision";
+import Philosophy from "@/components/sections/Philosophy";
+import CTA from "@/components/sections/CTA";
+import Loader from "@/components/sections/Loader";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      {/* 
-        This is where we compose our sections:
-        <Hero />
-        <About />
-        <Timeline />
-        <Tracks />
-        <Judges />
-        <Sponsors />
-        <FAQ />
-      */}
-      <section className="w-full min-h-[80vh] flex items-center justify-center bg-background">
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground tracking-tight">
-            MBMC HackFest 2026
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Phase 1 Foundation Complete. Ready for component integration.
-          </p>
-        </div>
-      </section>
+    <main className="flex min-h-screen flex-col bg-background relative selection:bg-primary/30">
+      <Loader />
+      <Navbar />
+      <Hero />
+      <Countdown />
+      <Statistics />
+      <About />
+      <Vision />
+      <Philosophy />
+      <CTA />
     </main>
   );
 }

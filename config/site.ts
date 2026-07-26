@@ -11,7 +11,7 @@ export const siteConfig = {
   contact: {
     email: "contact@mbmchackfest.com",
   },
-  eventDate: "2026-10-15T00:00:00Z",
+  eventDate: "2026-10-15T09:00:00+05:45",
   navigation: [
     { name: "About", href: "#about" },
     { name: "Tracks", href: "#tracks" },
